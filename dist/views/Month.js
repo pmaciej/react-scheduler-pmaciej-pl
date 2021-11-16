@@ -57,6 +57,7 @@ import CSS from "../assets/css/styles.module.css";
 import { Cell } from "../components/common/Cell";
 var Month = function () {
     var _a = useAppState(), month = _a.month, selectedDate = _a.selectedDate, height = _a.height, events = _a.events, handleGotoDay = _a.handleGotoDay, remoteEvents = _a.remoteEvents, triggerLoading = _a.triggerLoading, handleState = _a.handleState, resources = _a.resources, resourceFields = _a.resourceFields, fields = _a.fields, direction = _a.direction;
+    var locale = useAppState().locale;
     var _b = month, weekStartOn = _b.weekStartOn, weekDays = _b.weekDays, startHour = _b.startHour, endHour = _b.endHour;
     var monthStart = startOfMonth(selectedDate);
     var monthEnd = endOfMonth(selectedDate);
@@ -101,7 +102,7 @@ var Month = function () {
         // eslint-disable-next-line
     }, [fetchEvents]);
     var renderDays = function () {
-        return daysList.map(function (date, i) { return (_jsx("td", __assign({ align: "center" }, { children: _jsx("div", { children: format(date, "EE") }, void 0) }), i)); });
+        return daysList.map(function (date, i) { return (_jsx("td", __assign({ align: "center" }, { children: _jsx("div", { children: format(date, "EE", { locale: locale }) }, void 0) }), i)); });
     };
     var renderCells = function (resource) {
         var recousedEvents = events;

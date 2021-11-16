@@ -62,6 +62,7 @@ var Week = function () {
     var _b = week, weekStartOn = _b.weekStartOn, weekDays = _b.weekDays, startHour = _b.startHour, endHour = _b.endHour, step = _b.step, cellRenderer = _b.cellRenderer;
     var _weekStart = startOfWeek(selectedDate, { weekStartsOn: weekStartOn });
     var daysList = weekDays.map(function (d) { return addDays(_weekStart, d); });
+    console.log(daysList);
     var weekStart = startOfDay(daysList[0]);
     var weekEnd = endOfDay(daysList[daysList.length - 1]);
     var START_TIME = setMinutes(setHours(selectedDate, startHour), 0);
