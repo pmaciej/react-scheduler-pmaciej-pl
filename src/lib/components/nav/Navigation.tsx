@@ -23,7 +23,8 @@ const Navigation = () => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
   const views = getViews();
-
+  const polishViews = ["Miesiąc", "Tydzień", "Dzień"]
+console.log(views)
   const toggleMoreMenu = (el?: Element) => {
     setAnchorEl(el || null);
   };
@@ -56,11 +57,11 @@ const Navigation = () => {
       {renderDateSelector()}
       <div>
         <Button onClick={() => handleState(new Date(), "selectedDate")}>
-          Today
+          Dzisiaj
         </Button>
         {views.length > 1 &&
           (isDesktop ? (
-            views.map((v) => (
+            views.map((v, index) => (
               <Button
                 key={v}
                 color={v === view ? "primary" : "inherit"}
@@ -70,7 +71,7 @@ const Navigation = () => {
                   handleState(v, "view");
                 }}
               >
-                {v}
+                {polishViews[index]}
               </Button>
             ))
           ) : (
