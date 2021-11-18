@@ -88,17 +88,17 @@ var initialState = function (fields, event) {
             value: (event === null || event === void 0 ? void 0 : event.title) || "",
             validity: !!(event === null || event === void 0 ? void 0 : event.title),
             type: "input",
-            config: { label: "Title", required: true, min: 3 },
+            config: { label: "Tytuł", required: true, min: 3 },
         }, start: {
             value: (event === null || event === void 0 ? void 0 : event.start) || new Date(),
             validity: true,
             type: "date",
-            config: { label: "Start", sm: 6 },
+            config: { label: "Początek", sm: 6 },
         }, end: {
             value: (event === null || event === void 0 ? void 0 : event.end) || new Date(),
             validity: true,
             type: "date",
-            config: { label: "End", sm: 6 },
+            config: { label: "Koniec", sm: 6 },
         } }, customFields);
 };
 var Editor = function () {
@@ -197,7 +197,7 @@ var Editor = function () {
             };
             return customEditor(schedulerHelpers);
         }
-        return (_jsxs(Fragment, { children: [_jsx(DialogTitle, { children: selectedEvent ? "Edit Event" : "Add Event" }, void 0), _jsx(DialogContent, __assign({ style: { overflowX: "hidden" } }, { children: _jsx(Grid, __assign({ container: true, spacing: 1 }, { children: Object.keys(state).map(function (key) {
+        return (_jsxs(Fragment, { children: [_jsx(DialogTitle, { children: selectedEvent ? "Edytuj Zlecenie" : "Dodaj Zlecenie" }, void 0), _jsx(DialogContent, __assign({ style: { overflowX: "hidden" } }, { children: _jsx(Grid, __assign({ container: true, spacing: 1 }, { children: Object.keys(state).map(function (key) {
                             var _a;
                             var item = state[key];
                             return (_jsx(Grid, __assign({ item: true, sm: (_a = item.config) === null || _a === void 0 ? void 0 : _a.sm, xs: 12 }, { children: renderInputs(key) }), key));
