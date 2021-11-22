@@ -27,6 +27,6 @@ var ResourceHeader = function (_a) {
     return (_jsxs(ListItem, __assign({ style: {
             padding: "2px 10px",
             textAlign: direction === "rtl" ? "right" : "left",
-        } }, { children: [_jsx(ListItemAvatar, { children: _jsx(Avatar, { style: { background: color }, alt: text, src: avatar }, void 0) }, void 0), _jsx(ListItemText, { primary: _jsx(Typography, __assign({ variant: "h6", noWrap: true }, { children: text }), void 0), secondary: _jsx(Typography, __assign({ variant: "caption", color: "textSecondary", noWrap: true }, { children: subtext }), void 0), style: { width: width / (resources.length + 1) } }, void 0)] }), void 0));
+        } }, { children: [_jsx(ListItemAvatar, { children: _jsx(Avatar, { style: { background: color }, alt: text, src: avatar }, void 0) }, void 0), _jsx(ListItemText, { primary: _jsx(Typography, __assign({ variant: "body2", noWrap: true }, { children: text }), void 0), secondary: _jsx(Typography, __assign({ variant: "caption", color: "textSecondary", noWrap: true }, { children: subtext }), void 0), style: { width: width / (resources.length + 1) } }, void 0)] }), void 0));
 };
 export { ResourceHeader };
