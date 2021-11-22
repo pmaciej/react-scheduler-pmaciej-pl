@@ -57,7 +57,7 @@ console.log(views)
       {renderDateSelector()}
       <div>
         <Button onClick={() => handleState(new Date(), "selectedDate")}>
-          Dzisiaj
+          <h4>Dzisiaj</h4>
         </Button>
         {views.length > 1 &&
           (isDesktop ? (
@@ -71,7 +71,7 @@ console.log(views)
                   handleState(v, "view");
                 }}
               >
-                {polishViews[index]}
+                <h4>{polishViews[index]}</h4>
               </Button>
             ))
           ) : (

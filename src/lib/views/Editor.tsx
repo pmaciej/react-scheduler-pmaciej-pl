@@ -221,10 +221,10 @@ const Editor = () => {
         </DialogContent>
         <DialogActions>
           <Button color="inherit" fullWidth onClick={() => handleClose()}>
-            Cancel
+            Anuluj
           </Button>
           <Button color="primary" fullWidth onClick={handleConfirm}>
-            Confirm
+            Zatwierdź
           </Button>
         </DialogActions>
       </Fragment>

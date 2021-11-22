@@ -44,9 +44,9 @@ const DayDateBtn = ({ selectedDate, onChange }: DayDateBtnProps) => {
               ref={params.inputRef}
               style={{ padding: 4 }}
               onClick={toggleDialog}
-            >{`${format(selectedDate, "dd, MMMM yyyy", {
+            ><h4>{`${format(selectedDate, "dd, MMMM yyyy", {
               locale: locale,
-            })}`}</Button>
+            })}`}</h4></Button>
           )}
         />
       </DateProvider>

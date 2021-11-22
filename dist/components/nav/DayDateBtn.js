@@ -33,8 +33,8 @@ var DayDateBtn = function (_a) {
         var nexDay = addDays(selectedDate, 1);
         onChange(nexDay, "selectedDate");
     };
-    return (_jsxs("div", { children: [_jsx(LocaleArrow, { type: "prev", onClick: handlePrev }, void 0), _jsx(DateProvider, { children: _jsx(DatePicker, { open: open, onClose: toggleDialog, openTo: "day", views: ["month", "day"], value: selectedDate, onChange: handleChange, renderInput: function (params) { return (_jsx(Button, __assign({ ref: params.inputRef, style: { padding: 4 }, onClick: toggleDialog }, { children: "" + format(selectedDate, "dd, MMMM yyyy", {
-                            locale: locale,
-                        }) }), void 0)); } }, void 0) }, void 0), _jsx(LocaleArrow, { type: "next", onClick: handleNext }, void 0)] }, void 0));
+    return (_jsxs("div", { children: [_jsx(LocaleArrow, { type: "prev", onClick: handlePrev }, void 0), _jsx(DateProvider, { children: _jsx(DatePicker, { open: open, onClose: toggleDialog, openTo: "day", views: ["month", "day"], value: selectedDate, onChange: handleChange, renderInput: function (params) { return (_jsx(Button, __assign({ ref: params.inputRef, style: { padding: 4 }, onClick: toggleDialog }, { children: _jsx("h4", { children: "" + format(selectedDate, "dd, MMMM yyyy", {
+                                locale: locale,
+                            }) }, void 0) }), void 0)); } }, void 0) }, void 0), _jsx(LocaleArrow, { type: "next", onClick: handleNext }, void 0)] }, void 0));
 };
 export { DayDateBtn };

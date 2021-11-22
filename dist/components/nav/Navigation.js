@@ -41,11 +41,11 @@ var Navigation = function () {
                 return "";
         }
     };
-    return (_jsxs("div", __assign({ className: CSS.cal_nav }, { children: [renderDateSelector(), _jsxs("div", { children: [_jsx(Button, __assign({ onClick: function () { return handleState(new Date(), "selectedDate"); } }, { children: "Dzisiaj" }), void 0), views.length > 1 &&
+    return (_jsxs("div", __assign({ className: CSS.cal_nav }, { children: [renderDateSelector(), _jsxs("div", { children: [_jsx(Button, __assign({ onClick: function () { return handleState(new Date(), "selectedDate"); } }, { children: _jsx("h4", { children: "Dzisiaj" }, void 0) }), void 0), views.length > 1 &&
                         (isDesktop ? (views.map(function (v, index) { return (_jsx(Button, __assign({ color: v === view ? "primary" : "inherit", onClick: function () { return handleState(v, "view"); }, onDragOver: function (e) {
                                 e.preventDefault();
                                 handleState(v, "view");
-                            } }, { children: polishViews[index] }), v)); })) : (_jsxs(Fragment, { children: [_jsx(IconButton, __assign({ style: { padding: 5 }, onClick: function (e) {
+                            } }, { children: _jsx("h4", { children: polishViews[index] }, void 0) }), v)); })) : (_jsxs(Fragment, { children: [_jsx(IconButton, __assign({ style: { padding: 5 }, onClick: function (e) {
                                         toggleMoreMenu(e.currentTarget);
                                     } }, { children: _jsx(MoreVertIcon, {}, void 0) }), void 0), _jsx(Popover, __assign({ open: Boolean(anchorEl), anchorEl: anchorEl, onClose: function (e) {
                                         toggleMoreMenu();

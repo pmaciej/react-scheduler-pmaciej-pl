@@ -201,7 +201,7 @@ var Editor = function () {
                             var _a;
                             var item = state[key];
                             return (_jsx(Grid, __assign({ item: true, sm: (_a = item.config) === null || _a === void 0 ? void 0 : _a.sm, xs: 12 }, { children: renderInputs(key) }), key));
-                        }) }), void 0) }), void 0), _jsxs(DialogActions, { children: [_jsx(Button, __assign({ color: "inherit", fullWidth: true, onClick: function () { return handleClose(); } }, { children: "Cancel" }), void 0), _jsx(Button, __assign({ color: "primary", fullWidth: true, onClick: handleConfirm }, { children: "Confirm" }), void 0)] }, void 0)] }, void 0));
+                        }) }), void 0) }), void 0), _jsxs(DialogActions, { children: [_jsx(Button, __assign({ color: "inherit", fullWidth: true, onClick: function () { return handleClose(); } }, { children: "Anuluj" }), void 0), _jsx(Button, __assign({ color: "primary", fullWidth: true, onClick: handleConfirm }, { children: "Zatwierd\u017A" }), void 0)] }, void 0)] }, void 0));
     };
     return (_jsx(Dialog, __assign({ open: dialog, fullScreen: isMobile, maxWidth: dialogMaxWidth }, { children: renderEditor() }), void 0));
 };
