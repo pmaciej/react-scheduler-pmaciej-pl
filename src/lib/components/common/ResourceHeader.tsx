@@ -38,7 +38,7 @@ const ResourceHeader = ({ resource }: ResourceHeaderProps) => {
       </ListItemAvatar>
       <ListItemText
         primary={
-          <Typography variant="body2" noWrap>
+          <Typography variant="h6" noWrap>
             {text}
           </Typography>
         }

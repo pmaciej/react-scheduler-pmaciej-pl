@@ -56,13 +56,14 @@ console.log(views)
     <div className={CSS.cal_nav}>
       {renderDateSelector()}
       <div>
-        <Button onClick={() => handleState(new Date(), "selectedDate")}>
-          <h4>Dzisiaj</h4>
+        <Button size="large" onClick={() => handleState(new Date(), "selectedDate")}>
+          Dzisiaj
         </Button>
         {views.length > 1 &&
           (isDesktop ? (
             views.map((v, index) => (
               <Button
+                size="large"
                 key={v}
                 color={v === view ? "primary" : "inherit"}
                 onClick={() => handleState(v, "view")}
@@ -71,7 +72,7 @@ console.log(views)
                   handleState(v, "view");
                 }}
               >
-                <h4>{polishViews[index]}</h4>
+                {polishViews[index]}
               </Button>
             ))
           ) : (
