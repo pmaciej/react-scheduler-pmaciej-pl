@@ -93,7 +93,7 @@ const EventItem = ({
 
   let item = (
     <div style={{ padding: 2 }}>
-      <Typography variant="subtitle2" style={{ fontSize: 12 }} noWrap>
+      <Typography variant="subtitle2" color="#FFF" style={{ fontSize: 12 }} noWrap>
         {event.title}
       </Typography>
       {showdate && (
@@ -200,18 +200,18 @@ const EventItem = ({
               >
                 <div>
                   <Button
-                    style={{  }}
+                    style={{ color: '#FFF' }}
                     size="small"
                     onClick={handleConfirmDelete}
                   >
-                    DELETE
+                    USUŃ
                   </Button>
                   <Button
                     style={{ color: '#FFF'}}
                     size="small"
                     onClick={() => setDeleteConfirm(false)}
                   >
-                    CANCEL
+                    ANULUJ
                   </Button>
                 </div>
               </Slide>
