@@ -204,14 +204,14 @@ const EventItem = ({
                     size="small"
                     onClick={handleConfirmDelete}
                   >
-                    DELETE
+                    USUŃ
                   </Button>
                   <Button
                     style={{ color: theme.palette.action.disabled }}
                     size="small"
                     onClick={() => setDeleteConfirm(false)}
                   >
-                    CANCEL
+                    ANULUJ
                   </Button>
                 </div>
               </Slide>
