@@ -291,12 +291,12 @@ const Week = () => {
                   <tr key={i}>
                     {daysList.map((date, i) => {
                       const start = new Date(
-                        `${format(date, "yyyy MM dd")} ${format(h, "hh:mm a")}`
+                        `${format(date, "yyyy MM dd")} ${format(h, "HH:mm")}`
                       );
                       const end = new Date(
                         `${format(date, "yyyy MM dd")} ${format(
                           addMinutes(h, step),
-                          "hh:mm a"
+                          "HH:mm"
                         )}`
                       );
                       const field = resourceFields.idField;

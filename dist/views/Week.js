@@ -177,8 +177,8 @@ var Week = function () {
                                                     })
                                                         .sort(function (a, b) { return a.end.getTime() - b.end.getTime(); }), today: date, minuteHeight: MINUTE_HEIGHT, cellHeight: CELL_HEIGHT, startHour: startHour, step: step, direction: direction }, void 0) }, i)); }) }, void 0) }, void 0), _jsx("tbody", { children: hours.map(function (h, i) { return (_jsx("tr", { children: daysList.map(function (date, i) {
                                                 var _a;
-                                                var start = new Date(format(date, "yyyy MM dd") + " " + format(h, "hh:mm a"));
-                                                var end = new Date(format(date, "yyyy MM dd") + " " + format(addMinutes(h, step), "hh:mm a"));
+                                                var start = new Date(format(date, "yyyy MM dd") + " " + format(h, "HH:mm"));
+                                                var end = new Date(format(date, "yyyy MM dd") + " " + format(addMinutes(h, step), "HH:mm"));
                                                 var field = resourceFields.idField;
                                                 return (_jsx("td", __assign({ className: isToday(date) ? CSS.today_cell : "" }, { children: cellRenderer ? (cellRenderer((_a = {
                                                             day: date,

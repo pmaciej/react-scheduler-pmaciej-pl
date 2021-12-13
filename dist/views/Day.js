@@ -130,8 +130,8 @@ var Day = function () {
                                                             isSameDay(selectedDate, e.start);
                                                     }), today: selectedDate, minuteHeight: MINUTE_HEIGHT, cellHeight: CELL_HEIGHT, startHour: startHour, step: step, direction: direction }, void 0) }, void 0) }, void 0) }, void 0), _jsx("tbody", { children: hours.map(function (h, i) {
                                             var _a;
-                                            var start = new Date(format(selectedDate, "yyyy MM dd") + " " + format(h, "hh:mm a"));
-                                            var end = new Date(format(selectedDate, "yyyy MM dd") + " " + format(addMinutes(h, step), "hh:mm a"));
+                                            var start = new Date(format(selectedDate, "yyyy MM dd") + " " + format(h, "HH:mm"));
+                                            var end = new Date(format(selectedDate, "yyyy MM dd") + " " + format(addMinutes(h, step), "HH:mm"));
                                             var field = resourceFields.idField;
                                             return (_jsx("tr", { children: _jsx("td", __assign({ className: isToday(selectedDate) ? CSS.today_cell : "" }, { children: cellRenderer ? (cellRenderer((_a = {
                                                             day: selectedDate,

@@ -98,9 +98,9 @@ const EventItem = ({
       </Typography>
       {showdate && (
         <Typography style={{ fontSize: 11 }} noWrap>
-          {`${format(event.start, "hh:mm a", {
+          {`${format(event.start, "HH:mm", {
             locale: locale,
-          })} - ${format(event.end, "hh:mm a", { locale: locale })}`}
+          })} - ${format(event.end, "HH:mm", { locale: locale })}`}
         </Typography>
       )}
     </div>
@@ -121,7 +121,7 @@ const EventItem = ({
           {hasPrev ? (
             <PrevArrow fontSize="small" style={{ display: "flex" }} />
           ) : (
-            showdate && format(event.start, "hh:mm a", { locale: locale })
+            showdate && format(event.start, "HH:mm", { locale: locale })
           )}
         </Typography>
         <Typography
@@ -136,7 +136,7 @@ const EventItem = ({
           {hasNext ? (
             <NextArrow fontSize="small" style={{ display: "flex" }} />
           ) : (
-            showdate && format(event.end, "hh:mm a", { locale: locale })
+            showdate && format(event.end, "HH:mm", { locale: locale })
           )}
         </Typography>
       </div>
@@ -233,9 +233,9 @@ const EventItem = ({
             noWrap
           >
             <EventNoteRoundedIcon />{" "}
-            {`${format(event.start, "dd MMMM yyyy hh:mm a", {
+            {`${format(event.start, "dd MMMM yyyy HH:mm", {
               locale: locale,
-            })} - ${format(event.end, "dd MMMM yyyy hh:mm a", {
+            })} - ${format(event.end, "dd MMMM yyyy HH:mm", {
               locale: locale,
             })}`}
           </Typography>

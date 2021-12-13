@@ -222,13 +222,13 @@ const Day = () => {
                   const start = new Date(
                     `${format(selectedDate, "yyyy MM dd")} ${format(
                       h,
-                      "hh:mm a"
+                      "HH:mm"
                     )}`
                   );
                   const end = new Date(
                     `${format(selectedDate, "yyyy MM dd")} ${format(
                       addMinutes(h, step),
-                      "hh:mm a"
+                      "HH:mm"
                     )}`
                   );
                   const field = resourceFields.idField;

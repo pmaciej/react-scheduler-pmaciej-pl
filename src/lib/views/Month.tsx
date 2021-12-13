@@ -108,10 +108,10 @@ const Month = () => {
       const cells = weekDays.map((d) => {
         const today = addDays(startDay, d);
         const start = new Date(
-          `${format(setHours(today, startHour), "yyyy MM dd hh:mm a")}`
+          `${format(setHours(today, startHour), "yyyy MM dd HH:mm")}`
         );
         const end = new Date(
-          `${format(setHours(today, endHour), "yyyy MM dd hh:mm a")}`
+          `${format(setHours(today, endHour), "yyyy MM dd HH:mm")}`
         );
         const field = resourceFields.idField;
         return (

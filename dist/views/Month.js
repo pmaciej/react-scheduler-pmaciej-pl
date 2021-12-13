@@ -113,8 +113,8 @@ var Month = function () {
         var _loop_1 = function (startDay) {
             var cells = weekDays.map(function (d) {
                 var today = addDays(startDay, d);
-                var start = new Date("" + format(setHours(today, startHour), "yyyy MM dd hh:mm a"));
-                var end = new Date("" + format(setHours(today, endHour), "yyyy MM dd hh:mm a"));
+                var start = new Date("" + format(setHours(today, startHour), "yyyy MM dd HH:mm"));
+                var end = new Date("" + format(setHours(today, endHour), "yyyy MM dd HH:mm"));
                 var field = resourceFields.idField;
                 return (_jsx("td", { children: _jsx(Cell, __assign({ height: CELL_HEIGHT, start: start, end: end, resourceKey: field, resourceVal: resource ? resource[field] : null }, { children: _jsxs(Fragment, { children: [_jsx(Avatar, __assign({ style: {
                                         width: 27,
