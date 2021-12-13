@@ -248,7 +248,7 @@ const Week = () => {
                     <td>
                       <div style={{ height: CELL_HEIGHT }}>
                         <Typography variant="caption">
-                          {format(h, "hh:mm a", { locale: locale })}
+                          {format(h, "HH:mm", { locale: locale })}
                         </Typography>
                       </div>
                     </td>
