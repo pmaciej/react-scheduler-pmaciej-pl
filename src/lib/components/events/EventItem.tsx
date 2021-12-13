@@ -93,7 +93,7 @@ const EventItem = ({
 
   let item = (
     <div style={{ padding: 2 }}>
-      <Typography variant="subtitle2" style={{ fontSize: 12 }} noWrap>
+      <Typography variant="subtitle2" color="#FFF" style={{ fontSize: 12 }} noWrap>
         {event.title}
       </Typography>
       {showdate && (
