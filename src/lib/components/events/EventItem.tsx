@@ -228,7 +228,7 @@ const EventItem = ({
         <div className={CSS.popper__p}>
           <Typography
             style={{ display: "flex", alignItems: "center" }}
-            color="textSecondary"
+            color="#0E0B0B"
             variant="caption"
             noWrap
           >
@@ -246,7 +246,7 @@ const EventItem = ({
               variant="caption"
               noWrap
             >
-              <SupervisorAccountRoundedIcon />{" "}
+              <SupervisorAccountRoundedIcon />{"Wykonawca: "}
               {hasResource
                 .map((res) => res[resourceFields.textField])
                 .join(", ")}
