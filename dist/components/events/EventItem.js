@@ -109,7 +109,7 @@ var EventItem = function (_a) {
             }
         });
     }); };
-    var item = (_jsxs("div", __assign({ style: { padding: 2 } }, { children: [_jsx(Typography, __assign({ variant: "subtitle2", style: { fontSize: 12 }, noWrap: true }, { children: event.title }), void 0), showdate && (_jsx(Typography, __assign({ style: { fontSize: 11 }, noWrap: true }, { children: format(event.start, "hh:mm a", {
+    var item = (_jsxs("div", __assign({ style: { padding: 2 } }, { children: [_jsx(Typography, __assign({ variant: "subtitle1", color: "#2222", style: { fontSize: 12 }, noWrap: true }, { children: event.title }), void 0), showdate && (_jsx(Typography, __assign({ style: { fontSize: 11 }, noWrap: true }, { children: format(event.start, "hh:mm a", {
                     locale: locale,
                 }) + " - " + format(event.end, "hh:mm a", { locale: locale }) }), void 0))] }), void 0));
     if (multiday) {
@@ -136,11 +136,11 @@ var EventItem = function (_a) {
                                         } }, { children: _jsx(ClearRoundedIcon, { color: "disabled" }, void 0) }), void 0) }, void 0), _jsxs("div", __assign({ style: { display: "inherit" } }, { children: [_jsx(IconButton, __assign({ size: "small", style: { color: theme.palette.primary.contrastText }, onClick: function () {
                                                 triggerViewer();
                                                 triggerDialog(true, event);
-                                            } }, { children: _jsx(EditRoundedIcon, {}, void 0) }), void 0), !deleteConfirm && (_jsx(IconButton, __assign({ size: "small", style: { color: theme.palette.primary.contrastText }, onClick: function () { return setDeleteConfirm(true); } }, { children: _jsx(DeleteRoundedIcon, {}, void 0) }), void 0)), _jsx(Slide, __assign({ in: deleteConfirm, direction: direction === "rtl" ? "right" : "left", mountOnEnter: true, unmountOnExit: true }, { children: _jsxs("div", { children: [_jsx(Button, __assign({ style: { color: theme.palette.error.main }, size: "small", onClick: handleConfirmDelete }, { children: "DELETE" }), void 0), _jsx(Button, __assign({ style: { color: theme.palette.action.disabled }, size: "small", onClick: function () { return setDeleteConfirm(false); } }, { children: "CANCEL" }), void 0)] }, void 0) }), void 0)] }), void 0)] }), void 0), viewerTitleComponent instanceof Function ? (viewerTitleComponent(event)) : (_jsx(Typography, __assign({ style: { padding: "5px 0" }, noWrap: true }, { children: event.title }), void 0))] }), void 0), _jsxs("div", __assign({ className: CSS.popper__p }, { children: [_jsxs(Typography, __assign({ style: { display: "flex", alignItems: "center" }, color: "textSecondary", variant: "caption", noWrap: true }, { children: [_jsx(EventNoteRoundedIcon, {}, void 0), " ", format(event.start, "dd MMMM yyyy hh:mm a", {
+                                            } }, { children: _jsx(EditRoundedIcon, {}, void 0) }), void 0), !deleteConfirm && (_jsx(IconButton, __assign({ size: "small", style: { color: theme.palette.primary.contrastText }, onClick: function () { return setDeleteConfirm(true); } }, { children: _jsx(DeleteRoundedIcon, {}, void 0) }), void 0)), _jsx(Slide, __assign({ in: deleteConfirm, direction: direction === "rtl" ? "right" : "left", mountOnEnter: true, unmountOnExit: true }, { children: _jsxs("div", { children: [_jsx(Button, __assign({ style: {}, size: "small", onClick: handleConfirmDelete }, { children: "DELETE" }), void 0), _jsx(Button, __assign({ style: { color: '#FFF' }, size: "small", onClick: function () { return setDeleteConfirm(false); } }, { children: "CANCEL" }), void 0)] }, void 0) }), void 0)] }), void 0)] }), void 0), viewerTitleComponent instanceof Function ? (viewerTitleComponent(event)) : (_jsx(Typography, __assign({ style: { padding: "5px 0" }, noWrap: true }, { children: event.title }), void 0))] }), void 0), _jsxs("div", __assign({ className: CSS.popper__p }, { children: [_jsxs(Typography, __assign({ style: { display: "flex", alignItems: "center" }, color: "textSecondary", variant: "caption", noWrap: true }, { children: [_jsx(EventNoteRoundedIcon, {}, void 0), " ", format(event.start, "dd MMMM yyyy hh:mm a", {
                                     locale: locale,
                                 }) + " - " + format(event.end, "dd MMMM yyyy hh:mm a", {
                                     locale: locale,
-                                })] }), void 0), hasResource.length > 0 && (_jsxs(Typography, __assign({ style: { display: "flex", alignItems: "center" }, color: "textSecondary", variant: "caption", noWrap: true }, { children: [_jsx(SupervisorAccountRoundedIcon, {}, void 0), " ", hasResource
+                                })] }), void 0), hasResource.length > 0 && (_jsxs(Typography, __assign({ style: { display: "flex", alignItems: "center" }, color: "#0e0b0b", variant: "caption", noWrap: true }, { children: [_jsx(SupervisorAccountRoundedIcon, {}, void 0), " ", hasResource
                                     .map(function (res) { return res[resourceFields.textField]; })
                                     .join(", ")] }), void 0)), viewerExtraComponent instanceof Function
                             ? viewerExtraComponent(fields, event)
@@ -170,7 +170,7 @@ var EventItem = function (_a) {
                         }, draggable: true, onDragStart: function (e) {
                             e.stopPropagation();
                             e.dataTransfer.setData("text/plain", "" + event.event_id);
-                            e.currentTarget.style.backgroundColor = theme.palette.error.main;
+                            e.currentTarget.style.backgroundColor = "theme.palette.error.main";
                         }, onDragEnd: function (e) {
                             e.currentTarget.style.backgroundColor =
                                 event.color || theme.palette.primary.main;

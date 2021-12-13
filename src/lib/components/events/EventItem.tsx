@@ -93,7 +93,7 @@ const EventItem = ({
 
   let item = (
     <div style={{ padding: 2 }}>
-      <Typography variant="subtitle2" style={{ fontSize: 12 }} noWrap>
+      <Typography variant="subtitle1" color="#2222" style={{ fontSize: 12 }} noWrap>
         {event.title}
       </Typography>
       {showdate && (
@@ -200,14 +200,14 @@ const EventItem = ({
               >
                 <div>
                   <Button
-                    style={{ color: theme.palette.error.main }}
+                    style={{  }}
                     size="small"
                     onClick={handleConfirmDelete}
                   >
                     DELETE
                   </Button>
                   <Button
-                    style={{ color: theme.palette.action.disabled }}
+                    style={{ color: '#FFF'}}
                     size="small"
                     onClick={() => setDeleteConfirm(false)}
                   >
@@ -242,7 +242,7 @@ const EventItem = ({
           {hasResource.length > 0 && (
             <Typography
               style={{ display: "flex", alignItems: "center" }}
-              color="textSecondary"
+              color="#0e0b0b"
               variant="caption"
               noWrap
             >
@@ -297,7 +297,7 @@ const EventItem = ({
             onDragStart={(e) => {
               e.stopPropagation();
               e.dataTransfer.setData("text/plain", `${event.event_id}`);
-              e.currentTarget.style.backgroundColor = theme.palette.error.main;
+              e.currentTarget.style.backgroundColor = "theme.palette.error.main";
             }}
             onDragEnd={(e) => {
               e.currentTarget.style.backgroundColor =
